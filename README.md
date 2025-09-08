@@ -16,8 +16,7 @@ Feito com **HTML, CSS e JavaScript** usando a [GitHub REST API](https://docs.git
 ---
 
 ## 🚀 Demonstração
-🔗 [Acesse aqui](https://teu-link-aqui.netlify.app) *(coloca o link do deploy quando subir no Netlify/Vercel/GitHub Pages)*
-
+🔗 [Acesse aqui](https://github-vitrine.netlify.app/)
 ---
 
 ## 🛠️ Tecnologias
