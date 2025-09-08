@@ -1,0 +1,207 @@
+/* ===============================
+   Reset
+   =============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===============================
+   Tema Dark / Light
+   =============================== */
+body.dark {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+body.light {
+  background: #f6f8fa;
+  color: #24292f;
+}
+
+/* Dark / Light específicos */
+body.dark header, body.dark footer, body.dark #userInfo, body.dark .repo-card {
+  background: #161b22;
+}
+
+body.light header, body.light footer, body.light #userInfo, body.light .repo-card {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+}
+
+/* ===============================
+   Header
+   =============================== */
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  outline: none;
+  width: 220px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s, background 0.3s;
+}
+
+#searchBtn {
+  background: #238636;
+  color: white;
+}
+
+#searchBtn:hover {
+  background: #2ea043;
+  transform: scale(1.05);
+}
+
+#toggleTheme {
+  background: #6e7681;
+  color: white;
+}
+
+#toggleTheme:hover {
+  background: #484f58;
+  transform: rotate(15deg);
+}
+
+/* ===============================
+   Info do usuário
+   =============================== */
+#userInfo {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#userInfo img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+#userInfo h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#userInfo p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#userInfo a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #58a6ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#userInfo a:hover {
+  background: #1f6feb;
+}
+
+/* ===============================
+   Repositórios
+   =============================== */
+#repoContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.repo-card {
+  padding: 15px;
+  border-radius: 12px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.repo-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.repo-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.repo-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #58a6ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.repo-card a:hover {
+  background: #1f6feb;
+}
+
+/* ===============================
+   Footer
+   =============================== */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 20px;
+}
