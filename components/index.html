@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/Assets/icons8-github-64.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header>
+    <h1><i class="bx bxl-github"></i> GitHub Explorer</h1>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Buscar usuário...">
+      <button id="searchBtn"><i class="bx bx-search-alt"></i></button>
+      <button id="toggleTheme"><i class="bx bx-moon"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="userInfo"></section>
+    <h2><i class="bx bx-folder"></i> Repositórios Recentes</h2>
+    <div id="repoContainer"></div>
+  </main>
+
+  <footer>
+    <p>Feito por <a href="https://github.com/willyang10x" target="_blank">willyang10x</a> | 
+    <a href="https://docs.github.com/en/rest" target="_blank"><i class="bx bx-book-open"></i> GitHub API</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
